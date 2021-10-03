@@ -5,8 +5,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web-chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div id="app">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      template: `
+        <div class="container">
+          <div class="frame-background"></div>
+          <div class="main-content">
+            <div class="sidebar">
+              <div class="profile-container">
+                <div class="profile"></div>
+                <div class="options">
+                  <img src="/assets/chat.png" alt="">
+                  <img src="/assets/settings.png" alt="">
+                </div>
+              </div>
+              <div class="search-container">
+                <img src="/assets/loupe.png" alt="">
+                <input placeholder="search contacts here"/>
+              </div>
+              <div class="chat-container">
+                <div class="chat">
+                  <div class="profile orange"></div>
+                  <div class="message-container">
+                    <h1>User 01</h1>
+                    <p>i´m working on Quasar</p>
+                  </div>
+                  <div class="contact-info">
+                    <span>19:00</span>
+                    <img src="assets/down-chevron.png" />
+                  </div>
+                </div>
+                <div class="chat">
+                  <div class="profile orange"></div>
+                  <div class="message-container">
+                    <h1>User 02</h1>
+                    <p>i´m working on Quasar</p>
+                  </div>
+                  <div class="contact-info">
+                    <span>19:00</span>
+                    <img src="assets/down-chevron.png" />
+                  </div>
+                </div>
+                <div class="chat">
+                  <div class="profile orange"></div>
+                  <div class="message-container">
+                    <h1>User 03</h1>
+                    <p>i´m working on Quasar</p>
+                  </div>
+                  <div class="contact-info">
+                    <span>19:00</span>
+                    <img src="assets/down-chevron.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="header-container">
+                <div>
+                  <div class="profile"></div>
+                  <h1>User 01</h1>
+                </div>
+                <div class="settings-container">
+                  <img src="/assets/loupe.png" alt="">
+                  <img src="/assets/link.png" alt="">
+                  <img src="/assets/settings.png" alt="">
+                </div>
+              </div>
+              <div class="chat-message-container">
+                <input placeholder="your message" />
+              </div>
+            </div>
+          </div>
+        </div>`
+    })
+  </script>
 </body>
 </html>
